@@ -244,7 +244,7 @@ const Masterlayout = () => {
         </div>
 
         <div className=" w-[74%] p-5">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center border-b border-purple-500 pb-5 mb-5 ">
             <h1 className="text-4xl text-purple-500 font-bold "> Stock Rocket</h1>
             <div className="h-[100px] w-[100px] overflow-hidden rounded-full">
               <img

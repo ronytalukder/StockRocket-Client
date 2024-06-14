@@ -7,10 +7,9 @@ import OtpVerify from './components/Users/OtpVerify'
 import NewPassword from './components/Users/NewPassword'
 import { getAuthToken } from './helper/SessionHelper'
 import Masterlayout from './components/Layout/Masterlayout'
+import CustomerCreateUpdatePage from './Pages/CustomerCreateUpdatePage'
 
 function App() {
-
-  
 
 
   const authenticRoutes = getAuthToken()?
@@ -29,7 +28,7 @@ function App() {
         },
         {
           path: "/customer-create-update",
-          element: <h1>Customer-create-update</h1>,
+          element: <CustomerCreateUpdatePage></CustomerCreateUpdatePage>,
         },
         {
           path: "/customer-create-update/:id",
