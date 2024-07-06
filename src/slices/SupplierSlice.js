@@ -1,14 +1,14 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 
-export const customerSlice = createSlice({
-    name: "customer",
+export const supplierSlice = createSlice({
+    name: "supplier",
     initialState:{
-        customers:[],
+        suppliers:[],
         list :0,
 
         formValues :{
-            customerName:"",
+            supplierName:"",
             phone : '',
             email : '',
             address : '', 
@@ -17,8 +17,8 @@ export const customerSlice = createSlice({
     },
 
     reducers:{
-        setCustomer: (state, action) => {
-            state.customers = action.payload;
+        setSuppliers: (state, action) => {
+            state.suppliers = action.payload;
         },
         setList :(state, action) =>{
             state.list = action.payload;
@@ -36,6 +36,5 @@ export const customerSlice = createSlice({
 
 })
 
-export const {setCustomer, setList, setFormValues, resetFormValues} = customerSlice.actions;
-export default customerSlice.reducer
-
+export const {setSuppliers, setList, setFormValues, resetFormValues} = supplierSlice.actions;
+export default supplierSlice.reducer

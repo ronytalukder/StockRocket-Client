@@ -8,6 +8,13 @@ import NewPassword from './components/Users/NewPassword'
 import { getAuthToken } from './helper/SessionHelper'
 import Masterlayout from './components/Layout/Masterlayout'
 import CustomerCreateUpdatePage from './Pages/CustomerCreateUpdatePage'
+import CustomerListPage from './Pages/CustomerListPage'
+import SupplierPage from './Pages/SupplierPage'
+import SupplierListPage from './Pages/SupplierListPage'
+import ExpenseTypeCreateUpdatePage from './Pages/ExpenseTypeCreateUpdatePage'
+import ExpenseTypeListPage from './Pages/ExpenseTypeListPage'
+import ExpenseCreateUpdatePage from './Pages/ExpenseCreateUpdatePage'
+import ExpenseListPage from './Pages/ExpenseListPage'
 
 function App() {
 
@@ -32,49 +39,49 @@ function App() {
         },
         {
           path: "/customer-create-update/:id",
-          element: <h1>Customer-create-update</h1>,
+          element: <CustomerCreateUpdatePage></CustomerCreateUpdatePage>,
         },
         {
           path: "/customer-list",
-          element: <h1>Customer-list</h1>,
+          element: <CustomerListPage></CustomerListPage>,
         },
     
         {
           path: "/supplier-create-update",
-          element: <h1>Supplier</h1>,
+          element: <SupplierPage></SupplierPage>,
         },
         {
           path: "/supplier-create-update/:id",
-          element: <h1>Supplier</h1>,
+          element: <SupplierPage></SupplierPage>,
         },
         {
           path: "/supplier-list",
-          element: <h1>Supplier-list</h1>,
+          element: <SupplierListPage></SupplierListPage>,
         },
     
         {
           path: "/expense-type-create-update",
-          element: <h1>Expense</h1>,
+          element: <ExpenseTypeCreateUpdatePage></ExpenseTypeCreateUpdatePage>,
         },
         {
           path: "/expense-type-create-update/:id",
-          element: <h1>Expense</h1>,
+          element: <ExpenseTypeCreateUpdatePage></ExpenseTypeCreateUpdatePage>,
         },
         {
           path: "/expense-type-list",
-          element: <h1>Expense-list</h1>,
+          element: <ExpenseTypeListPage></ExpenseTypeListPage>,
         },
         {
           path: "/expense-create-update",
-          element: <h1>Expense</h1>,
+          element: <ExpenseCreateUpdatePage></ExpenseCreateUpdatePage>,
         },
         {
           path: "/expense-create-update/:id",
-          element: <h1>Expense-update</h1>,
+          element: <ExpenseCreateUpdatePage></ExpenseCreateUpdatePage>,
         },
         {
           path: "/expense-list",
-          element: <h1>Expense-list</h1>,
+          element: <ExpenseListPage></ExpenseListPage>,
         },
         {
           path: "/brand-create-update",

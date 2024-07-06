@@ -2,19 +2,44 @@ import { useSelector } from "react-redux";
 import { store } from "../store/store";
 import { setFormValues } from "../slices/customerSlice";
 import { toast } from "react-toastify";
+import { useNavigate, useParams } from "react-router-dom";
+import { CreateAndUpdateCustomerApi, CustomerDetailsApi } from "../API/CustomerApi";
+import { useEffect, useState } from "react";
 
 
 const CustomerCreateUpdate = () => {
+
+
+    let [loading,   setLoading] =useState(false);
+
+const {id} = useParams();
+
+useEffect(() => {   
+
+    if(id){
+        CustomerDetailsApi(id)
+    }
+
+}, []);
+
+const navigate = useNavigate();
 
 
 const formValue = useSelector((state) => (state.customer.formValues));
 
 const handleCreateUpdate=() =>{
 
-
-
 if( formValue.customerName && formValue.phone && formValue.email && formValue.address){
-    toast.success("Customer created successfully");
+    setLoading(true)
+   let result = CreateAndUpdateCustomerApi(formValue, id)
+   if (result){
+    navigate('/customer-list')
+    setLoading(false)
+   }
+   else{
+    setLoading(false)
+   }
+
 }
 
 else{
@@ -40,7 +65,7 @@ else{
 
     return (
         <div>
-            <h1 className="text-3xl text-black font-bold mb-[50px]">Create New Customer</h1>
+            <h1 className="text-3xl text-black font-bold mb-[50px]"> {id?"Update Customer":"Create Customer"} </h1>
 
         <div className="flex justify-between flex-wrap">
 
