@@ -15,6 +15,8 @@ import ExpenseTypeCreateUpdatePage from './Pages/ExpenseTypeCreateUpdatePage'
 import ExpenseTypeListPage from './Pages/ExpenseTypeListPage'
 import ExpenseCreateUpdatePage from './Pages/ExpenseCreateUpdatePage'
 import ExpenseListPage from './Pages/ExpenseListPage'
+import ProductCreateUpdatePage from './Pages/ProductCreateUpdatePage'
+import ProductListPage from './Pages/ProductListPage'
 
 function App() {
 
@@ -109,15 +111,15 @@ function App() {
         },
         {
           path: "/product-create-update",
-          element: <h1>Product</h1>,
+          element: <ProductCreateUpdatePage></ProductCreateUpdatePage>,
         },
         {
           path: "/product-create-update/:id",
-          element: <h1>Product-update</h1>,
+          element: <ProductCreateUpdatePage></ProductCreateUpdatePage>,
         },
         {
           path: "/product-list",
-          element: <h1>Product-list</h1>,
+          element: <ProductListPage></ProductListPage>,
         },
         {
           path: "/purchase-create-update",
