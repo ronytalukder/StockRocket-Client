@@ -72,7 +72,9 @@ const ProductCreateUpdate = () => {
           setLoading(false);
           navigate('/product-list');
         }
-      } else {
+      }
+      
+      else {
         if (!formValue.name) toast.error("Please enter product name");
         if (!formValue.unit) toast.error("Please enter product unit");
         if (!formValue.details) toast.error("Please enter product details");

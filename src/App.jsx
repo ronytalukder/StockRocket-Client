@@ -17,6 +17,12 @@ import ExpenseCreateUpdatePage from './Pages/ExpenseCreateUpdatePage'
 import ExpenseListPage from './Pages/ExpenseListPage'
 import ProductCreateUpdatePage from './Pages/ProductCreateUpdatePage'
 import ProductListPage from './Pages/ProductListPage'
+import BrandCreateUpdatePage from './Pages/BrandCreateUpdatePage'
+import BrandListPage from './Pages/BrandListPage'
+import CategoryCreateUpdate from './components/CategoryCreateUpdate'
+import CategoryListPage from './Pages/CategoryListPage'
+import PurchaseCreatePage from './Pages/PurchaseCreatePage'
+import PurchaseListPage from './Pages/PurchaseListPage'
 
 function App() {
 
@@ -87,27 +93,27 @@ function App() {
         },
         {
           path: "/brand-create-update",
-          element: <h1>Brand</h1>,
+          element: <BrandCreateUpdatePage></BrandCreateUpdatePage>,
         },
         {
           path: "/brand-create-update/:id",
-          element: <h1>Brand-update</h1>,
+          element: <BrandCreateUpdatePage></BrandCreateUpdatePage>,
         },
         {
           path: "/brand-list",
-          element: <h1>Brand-list</h1>,
+          element: <BrandListPage></BrandListPage>,
         },
         {
           path: "/category-create-update",
-          element: <h1>Category</h1>,
+          element: <CategoryCreateUpdate></CategoryCreateUpdate>,
         },
         {
           path: "/category-create-update/:id",
-          element: <h1>Category-update</h1>,
+          element: <CategoryCreateUpdate></CategoryCreateUpdate>,
         },
         {
           path: "/category-list",
-          element: <h1>Category-list</h1>,
+          element: <CategoryListPage></CategoryListPage>,
         },
         {
           path: "/product-create-update",
@@ -123,11 +129,11 @@ function App() {
         },
         {
           path: "/purchase-create-update",
-          element: <h1>Purchase</h1>,
+          element: <PurchaseCreatePage></PurchaseCreatePage>,
         },
         {
           path: "/purchase-list",
-          element: <h1>Purchase-list</h1>,
+          element: <PurchaseListPage></PurchaseListPage>,
         },
         {
           path: "/sale-create-update",
