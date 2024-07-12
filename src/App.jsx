@@ -23,6 +23,10 @@ import CategoryCreateUpdate from './components/CategoryCreateUpdate'
 import CategoryListPage from './Pages/CategoryListPage'
 import PurchaseCreatePage from './Pages/PurchaseCreatePage'
 import PurchaseListPage from './Pages/PurchaseListPage'
+import SaleLIstPage from './Pages/SaleLIstPage'
+import SalesCreatePage from './Pages/SalesCreatePage'
+import ReturnCreatePage from './Pages/ReturnCreatePage'
+import ReturnListPage from './Pages/ReturnListPage'
 
 function App() {
 
@@ -137,19 +141,19 @@ function App() {
         },
         {
           path: "/sale-create-update",
-          element: <h1>Sale</h1>,
+          element: <SalesCreatePage></SalesCreatePage>,
         },
         {
           path: "/sale-list",
-          element: <h1>Sale-list</h1>,
+          element: <SaleLIstPage></SaleLIstPage>,
         },
         {
           path: "/return-create-update",
-          element: <h1>Return</h1>,
+          element: <ReturnCreatePage></ReturnCreatePage>,
         },
         {
           path: "/return-list",
-          element: <h1>Return-list</h1>,
+          element: <ReturnListPage></ReturnListPage>,
         },
         {
           path: "/sale-report",

@@ -7,6 +7,8 @@ import  productSlice  from '../slices/productSlice'
 import brandSlice from '../slices/brandSlice'
 import categorySlice from '../slices/categorySlice'
 import purchaseSlice from '../slices/purchaseSlice'
+import saleSlice from '../slices/saleSlice'
+import returnSlice from '../slices/returnSlice'
 
 
 export const store = configureStore({
@@ -19,5 +21,7 @@ export const store = configureStore({
     category: categorySlice,
     product: productSlice,
     purchase: purchaseSlice,
+    sale: saleSlice,
+    return: returnSlice,
   },
 })
