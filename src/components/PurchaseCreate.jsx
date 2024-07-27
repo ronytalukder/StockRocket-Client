@@ -52,7 +52,7 @@ const PurchaseCreate = () => {
                     unitCost: price,
                     total: quantity * price
                 };
-                store.dispatch(setSelectedProductItems(item));
+                store.dispatch(setSelectedProductItems(item)); 
                 // Clear inputs after adding to cart
                 setProductId("");
                 setQuantity("");

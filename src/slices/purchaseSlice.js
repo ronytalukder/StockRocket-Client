@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-0
+
 export const purchaseSlice = createSlice({
     name: 'purchase',
 

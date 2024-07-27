@@ -55,7 +55,7 @@ function App() {
         },
         {
           path: "/customer-list",
-          element: <CustomerListPage></CustomerListPage>,
+          element: <CustomerListPage></CustomerListPage>, 
         },
     
         {
